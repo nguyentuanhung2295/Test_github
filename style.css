@@ -1,0 +1,137 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  flex-direction: column;
+  text-align: center;
+  background-color: #927057;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#menu {
+  background-color: burlywood;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+.textmenu {
+  margin: 20px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa theo chiều ngang */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+img {
+  border: 5px solid burlywood;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+#form {
+  position: relative;
+  background-color: burlywood;
+  padding: 30px 20px 20px;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Mũi tên nhọn ở giữa phía trên */
+#form::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid burlywood;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-field i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #927057;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 12px 12px 12px 45px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #efe1c4;
+  color: #3a2a1c;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-field input::placeholder {
+  color: #a98f72;
+}
+
+.form-field input:focus {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(146, 112, 87, 0.3);
+}
+
+.submit {
+  margin-top: 10px;
+  padding: 12px 30px;
+  background-color: #927057;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.submit:hover {
+  background-color: #7a5d48;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  margin-top: 20px;
+}
